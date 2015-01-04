@@ -114,7 +114,7 @@ class PDF{
      * @return static
      */
     public function loadHTML($string, $encoding = null){
-        $string = $this->convertEntities($string);
+        #$string = $this->convertEntities($string);
         $this->dompdf->load_html($string, $encoding);
         $this->rendered = false;
         return $this;
